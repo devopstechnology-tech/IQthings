@@ -1,0 +1,387 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 100% ;
+  height: 100%;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+/* Navigation Bar */
+header{
+  width: 100%;
+  /* height: 80vh; */
+  background-size: cover;
+}
+.hrstyles{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 10px;
+  color: white;
+}
+.logo{
+  position: fixed;
+  float: left;
+  margin: 16px 36px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}
+.content{
+  width: 100%;
+  margin: 4em auto;
+  padding: 0;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+  color: #fff;
+}
+nav{
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+nav ul{
+  list-style: none;
+  background: #212121;
+  overflow: hidden;
+  color: white;
+  padding: 0px;
+  text-align: center;
+  margin: 0px;
+  transition: 1s;
+}
+nav.black ul{
+  background: #212121;
+  /* margin: 0;
+  padding: 20px;
+<<<<<<< HEAD
+  width: 100%; */
+=======
+  width: 100%;
+>>>>>>> 34194140217e2eb94443fd6c91e2d50d4026ba18
+}
+nav ul li{
+  display: inline-block;
+  padding: 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+nav a:hover{
+  color: green;
+  text-decoration: none;
+}
+.menu-icon{
+  width: 100%;
+  background: #000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+@media(max-width: 580px){
+  .logo{
+    position: fixed;
+    top: 0;
+    width: 50px;
+    margin-top: 16px;
+  }
+  nav ul{
+    max-height: 0px;
+    background: #000000;
+  }
+  nav.black ul{
+    background: #000000;
+  }
+  .showing{
+    max-height: 20em;
+  }
+  nav ul li{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
+  }
+  .menu-icon{
+    display: block;
+  }
+}
+/* End of Navigation */
+/* Start of carousel */
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+.test{
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  background: #212121;
+  width: 100%;
+  height:400px;
+  object-fit: cover;
+  opacity: 0.8;
+  margin-top: 0;
+}
+.imagebox{
+    background: 
+  linear-gradient(
+    rgba(83, 83, 83, 0.25), 
+    rgba(0, 0, 0, 0.45)
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color:white !important;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* margin: 200px; */
+  padding: 30px;
+
+}
+.carousel-indicators{
+  z-index: 1;
+}
+/* End of carousel */
+/* Start of Service */
+.title01{
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  color: black;
+  text-align: center;
+}
+.title02{
+font-family: 'Lato', sans-serif; 
+font-weight: 600;
+}
+.service-area{
+  background-color: transparent;
+}
+.service-single{
+  background-color: white;
+  border-radius: 20px;
+  padding:8px;
+  margin-top:7px;
+  color: #000;
+}
+.p01{
+  font-family: 'Lato', sans-serif; 
+  text-align: left;
+}
+.imagecard{
+  padding: 0px;
+  margin-top: 30px;
+}
+.fa-cog{
+  font-size:48px;
+  color: #FF5657;
+}
+.readmore1{
+  color: black;
+  width: 60%;
+  margin: 0;
+  padding: 7px;
+  /* background-color: #6cb44b; */
+}
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .service-single{
+    width:100%;
+  }
+}
+/* End of Service */
+/* Start of About */
+#about{
+  background-color: #212121;
+  color: white;
+  padding: 30px;
+  padding-top: 100px;
+  }
+#more {
+  display: none;
+}
+.title03{
+  text-align:center; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  text-transform: uppercase;
+}
+/* .p02{
+
+} */
+/* End of About */
+
+<<<<<<< HEAD
+=======
+.cards2{
+  color: #000;
+  margin: 0;
+}
+.cards1{
+  padding: 50px;
+  margin: 0;
+  background-color: black;
+
+}
+.cards{
+  border-radius: 8px;
+}
+
+.readmore4{
+    align-self: flex-end;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    color: #000;
+    margin: 0;
+    padding: 12px;
+}
+.button1{
+  padding-top: 45px;
+}
+>>>>>>> 34194140217e2eb94443fd6c91e2d50d4026ba18
+/* Start of Portfolio */
+#portfolio{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  color: #000;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover
+{
+  color:#537a6f;
+  text-decoration:none;
+  cursor:pointer;
+}
+.title04{
+  color:black;
+  text-align:center; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  text-transform: uppercase;
+}
+.collapsible {
+  /* background-color: #777; */
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  padding-bottom: 0px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 30px;
+  font-style: inherit;
+}
+.paragraph{
+  text-align: left;
+  margin: 0;
+  padding-left: 10px;
+  width: 450px;
+  color: #000;
+}
+<<<<<<< HEAD
+=======
+.collapsible {
+  /* background-color: #777; */
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 30px;
+  font-style: inherit;
+
+}
+
+>>>>>>> 34194140217e2eb94443fd6c91e2d50d4026ba18
+.active, .collapsible:hover {
+  color: #537a6f;
+  border-radius: 10px;
+}
+<<<<<<< HEAD
+  
+.content2 {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: transparent;
+}
+.objectif{
+  padding-left: 50px;
+}
+/* End of Portfolio */
+=======
+>>>>>>> 34194140217e2eb94443fd6c91e2d50d4026ba18
+
+.content2 {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: transparent;
+  
+}
+#more {display: none;}
+
+#text{
+  display:none;
+  }
+  .btn-container{
+    margin: auto;
+    height:44px;
+    width:166.23px;
+    
+  }
+  a:active{
+    color:#ffd323;
+  }
+  button{
+    user-select:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    cursor:pointer;
+    border:none;
+    padding:8px;
+    font-size:20px;
+    color:white;
+    font-family:cursive;
+    box-sizing:border-box;
+  }
+
+/* Start of Contact */
+#contact{
+  background-color: #222222;
+  color: white;
+  padding-top: 10px;
+  }
+/* End of Contact */                        
+
+/* Start of footer */
+.footer{
+  margin: 0;
+}
+/* End of footer */
+html, body{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 100% ;
+  height: 100%;
+}
