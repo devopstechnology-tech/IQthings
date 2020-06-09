@@ -5,9 +5,11 @@ html, body{
   width: 100% ;
   height: 100%;
 }
+
 body{
   font-family: 'Open Sans', sans-serif;
 }
+
 /* Navigation Bar */
 header{
   width: 100%;
@@ -58,13 +60,6 @@ nav ul{
 }
 nav.black ul{
   background: #212121;
-  /* margin: 0;
-  padding: 20px;
-<<<<<<< HEAD
-  width: 100%; */
-=======
-  width: 100%;
->>>>>>> 34194140217e2eb94443fd6c91e2d50d4026ba18
 }
 nav ul li{
   display: inline-block;
@@ -89,7 +84,7 @@ nav a:hover{
   color: #fff;
   display: none;
 }
-@media(max-width: 580px){
+@media(max-width: 1300px){
   .logo{
     position: fixed;
     top: 0;
@@ -147,15 +142,19 @@ nav a:hover{
   color:white !important;
   text-transform: uppercase;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  /* margin: 200px; */
   padding: 30px;
-
 }
 .carousel-indicators{
   z-index: 1;
 }
 /* End of carousel */
+
 /* Start of Service */
+#services{
+  padding-top: 80px;
+  margin: 0px;
+  margin-bottom: 20px;
+}
 .title01{
   text-transform: uppercase;
   font-family: Verdana, Geneva, Tahoma, sans-serif; 
@@ -195,10 +194,13 @@ font-weight: 600;
   padding: 7px;
   /* background-color: #6cb44b; */
 }
-@media only screen and (max-width:620px) {
+@media only screen and (max-width:1300px) {
   /* For mobile phones: */
   .service-single{
     width:100%;
+  }
+  #services{
+    padding-top: 0px;
   }
 }
 /* End of Service */
@@ -217,40 +219,16 @@ font-weight: 600;
   font-family: Verdana, Geneva, Tahoma, sans-serif; 
   text-transform: uppercase;
 }
+#more {display: none;}
+
+#text{
+  display:none;
+}
 /* .p02{
 
 } */
 /* End of About */
 
-<<<<<<< HEAD
-=======
-.cards2{
-  color: #000;
-  margin: 0;
-}
-.cards1{
-  padding: 50px;
-  margin: 0;
-  background-color: black;
-
-}
-.cards{
-  border-radius: 8px;
-}
-
-.readmore4{
-    align-self: flex-end;
-    text-decoration: none;
-    display: flex;
-    justify-content: flex-end;
-    color: #000;
-    margin: 0;
-    padding: 12px;
-}
-.button1{
-  padding-top: 45px;
-}
->>>>>>> 34194140217e2eb94443fd6c91e2d50d4026ba18
 /* Start of Portfolio */
 #portfolio{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -271,7 +249,7 @@ a:hover
 .title04{
   color:black;
   text-align:center; 
-  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;  
   text-transform: uppercase;
 }
 .collapsible {
@@ -294,29 +272,11 @@ a:hover
   width: 450px;
   color: #000;
 }
-<<<<<<< HEAD
-=======
-.collapsible {
-  /* background-color: #777; */
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 30px;
-  font-style: inherit;
 
-}
-
->>>>>>> 34194140217e2eb94443fd6c91e2d50d4026ba18
 .active, .collapsible:hover {
   color: #537a6f;
   border-radius: 10px;
 }
-<<<<<<< HEAD
-  
 .content2 {
   padding: 0 18px;
   display: none;
@@ -324,46 +284,95 @@ a:hover
   background-color: transparent;
 }
 .objectif{
-  padding-left: 50px;
+  padding-left: 40px;
 }
-/* End of Portfolio */
-=======
->>>>>>> 34194140217e2eb94443fd6c91e2d50d4026ba18
-
 .content2 {
   padding: 0 18px;
   display: none;
   overflow: hidden;
   background-color: transparent;
-  
 }
-#more {display: none;}
-
-#text{
-  display:none;
+.portfolioimages{
+  width: 380px;
+  height:200px;
+  border-radius: 20px;
+}
+.fix{
+  margin: 0px;
+  padding-left: 10px;
+}
+@media only screen and (max-width:1024px) {
+  /* For mobile phones: */
+  .single-post{
+    width:100%;
+    padding: 0;
+    /* border-radius: 5px; */
   }
-  .btn-container{
-    margin: auto;
-    height:44px;
-    width:166.23px;
-    
+  .portfolioimages{
+    width: 200px;
+    height:auto; 
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
   }
-  a:active{
-    color:#ffd323;
+  .objectif{
+    padding-left: 10px;
   }
-  button{
-    user-select:none;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    cursor:pointer;
-    border:none;
-    padding:8px;
-    font-size:20px;
-    color:white;
-    font-family:cursive;
-    box-sizing:border-box;
+  .collapsible {
+    /* background-color: #777; */
+    color: black;
+    cursor: pointer;
+    padding-left: 18px;
+    padding-bottom: 0px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    font-style: inherit;
   }
+  @media(max-width:807px) {
+    .portfolioimages{
+      width: 150px;
+      height:auto; 
+      border-radius: 10px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  @media(max-width:766px) {
+  /* For mobile phones: */
+  .single-post{
+    width:100%;
+    padding: 0;
+    /* border-radius: 5px; */
+  }
+  .portfolioimages{
+    width: 80%;
+    height:auto; 
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  .objectif{
+    padding-left: 10px;
+  }
+  .collapsible {
+    /* background-color: #777; */
+    color: black;
+    cursor: pointer;
+    padding-left: 18px;
+    padding-bottom: 0px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 30px;
+    font-style: inherit;
+  }
+  }
+}
+/* End of portfolio */
 
 /* Start of Contact */
 #contact{
@@ -378,10 +387,3 @@ a:hover
   margin: 0;
 }
 /* End of footer */
-html, body{
-  margin: 0;
-  padding: 0;
-  background-color: white;
-  width: 100% ;
-  height: 100%;
-}
