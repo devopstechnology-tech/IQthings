@@ -33,6 +33,7 @@ header{
   color: #fff;
   font-weight: bold;
   font-size: 24px;
+  /* padding-top: 60px; */
 }
 .content{
   width: 100%;
@@ -53,13 +54,16 @@ nav ul{
   background: #212121;
   overflow: hidden;
   color: white;
-  padding: 0px;
+  /* padding-top: 60px; */
   text-align: center;
   margin: 0px;
   transition: 1s;
 }
-nav.black ul{
-  background: #212121;
+nav.black ul {
+  background: rgb(61, 61, 61);
+  /* height: 50px; */
+  color: #000;
+
 }
 nav ul li{
   display: inline-block;
@@ -126,9 +130,9 @@ nav a:hover{
   align-items: center;
   background: #212121;
   width: 100%;
-  height:400px;
+  height:870px;
   object-fit: cover;
-  opacity: 0.8;
+  opacity: 0.9;
   margin-top: 0;
 }
 .imagebox{
@@ -154,16 +158,19 @@ nav a:hover{
   padding-top: 10px;
   margin: 0px;
   margin-bottom: 20px;
+  color: rgb(104, 103, 103);
 }
 .title01{
   text-transform: uppercase;
   font-family: Verdana, Geneva, Tahoma, sans-serif; 
-  color: black;
+  color: rgb(104, 103, 103);
   text-align: center;
 }
 .title02{
 font-family: 'Lato', sans-serif; 
 font-weight: 600;
+color: rgb(104, 103, 103);
+text-align: left;
 }
 .service-area{
   background-color: transparent;
@@ -178,6 +185,7 @@ font-weight: 600;
 .p01{
   font-family: 'Lato', sans-serif; 
   text-align: left;
+  color: rgb(104, 103, 103);
 }
 .imagecard{
   padding: 0px;
@@ -387,3 +395,14 @@ a:hover
   margin: 0;
 }
 /* End of footer */
+.p03{
+  padding-left: 150px;
+  margin-left: 20px;
+  padding-top: 10px;
+}
+.btm{
+  /* margin: 0; */
+}
+.Btm1{
+  /* background-color: silver; */
+}
