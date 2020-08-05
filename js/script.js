@@ -16,7 +16,7 @@ var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+  coll[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
@@ -41,8 +41,8 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
-$(document).ready(function() {
-  $("#toggle").click(function() {
+$(document).ready(function () {
+  $("#toggle").click(function () {
     var elem = $("#toggle").text();
     if (elem == "Read More") {
       //Stuff to do when btn is in the read more state
@@ -55,6 +55,28 @@ $(document).ready(function() {
     }
   });
 });
+$(document).ready(function () {
+  $('.customer-logos').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 4
+      }
+    }, {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 3
+      }
+    }]
+  });
+});
 
 
 
@@ -65,5 +87,3 @@ $(document).ready(function() {
 
 
 
-
-  
